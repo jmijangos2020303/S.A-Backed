@@ -9,7 +9,7 @@ mongoose.connect('mongodb+srv://contrataciones:123@cluster0.5fwru.mongodb.net/?r
 
     control.RegistrarAd();
 
-    app.listen(3000, function (){
+    app.listen(process.env.PORT || 3000, function (){
         console.log("Contrataciones, esta corriendo correctamente en el puerto 3000");
     });
 
